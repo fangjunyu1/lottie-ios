@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/9/19.
 //
 
+#if canImport(QuartzCore)
+
 // MARK: - Font
 
 final class Font: Codable, Sendable, DictionaryInitializable {
@@ -57,3 +59,6 @@ final class FontList: Codable, Sendable, DictionaryInitializable {
   let fonts: [Font]
 
 }
+
+
+#endif

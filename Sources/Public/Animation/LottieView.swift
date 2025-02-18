@@ -1,6 +1,8 @@
 // Created by Bryn Bodayle on 1/20/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 #if canImport(SwiftUI)
 import SwiftUI
 
@@ -627,5 +629,8 @@ extension View {
     overlay(content(), alignment: .center)
   }
 }
+
+#endif
+
 
 #endif

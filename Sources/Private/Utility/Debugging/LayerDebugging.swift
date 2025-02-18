@@ -5,8 +5,12 @@
 //  Created by Brandon Withrow on 1/24/19.
 //
 
+<<<<<<< HEAD
 #if DEBUG
 
+=======
+#if canImport(QuartzCore)
+>>>>>>> temp-branch
 import QuartzCore
 
 // MARK: - LayerDebugStyle
@@ -223,4 +227,9 @@ extension [LayerModel] {
 
 }
 
+<<<<<<< HEAD
 #endif
+=======
+
+#endif
+>>>>>>> temp-branch

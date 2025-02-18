@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 2/1/19.
 //
 
+#if canImport(QuartzCore)
+
 import Foundation
 #if canImport(UIKit)
 import UIKit
@@ -75,4 +77,7 @@ extension FilepathImageProvider: Equatable {
     lhs.filepath == rhs.filepath
   }
 }
+#endif
+
+
 #endif

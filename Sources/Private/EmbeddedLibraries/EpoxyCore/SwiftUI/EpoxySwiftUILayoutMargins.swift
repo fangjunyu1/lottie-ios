@@ -1,6 +1,8 @@
 // Created by eric_horacek on 10/8/21.
 // Copyright © 2021 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 #if canImport(SwiftUI)
 import SwiftUI
 
@@ -46,4 +48,7 @@ private struct EpoxyLayoutMarginsPadding: ViewModifier {
     content.padding(epoxyLayoutMargins)
   }
 }
+#endif
+
+
 #endif

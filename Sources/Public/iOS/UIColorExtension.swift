@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 2/4/19.
 //
 
+#if canImport(QuartzCore)
+
 #if canImport(UIKit)
 import UIKit
 
@@ -17,4 +19,7 @@ extension UIColor {
   }
 
 }
+#endif
+
+
 #endif

@@ -1,6 +1,8 @@
 // Created by eric_horacek on 1/6/21.
 // Copyright © 2021 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - DidDisplayProviding
 
 /// A sentinel protocol for enabling an `CallbackContextEpoxyModeled` to provide a `didDisplay`
@@ -39,3 +41,6 @@ extension CallbackContextEpoxyModeled where Self: DidDisplayProviding {
     .init(keyPath: \Self.didDisplay, defaultValue: nil, updateStrategy: .chain())
   }
 }
+
+
+#endif

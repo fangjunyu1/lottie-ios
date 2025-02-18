@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/30/19.
 //
 
+#if canImport(QuartzCore)
+
 import CoreGraphics
 import Foundation
 
@@ -24,3 +26,5 @@ protocol AnyValueContainer: AnyObject {
   var lastUpdateFrame: CGFloat { get }
 
 }
+
+#endif

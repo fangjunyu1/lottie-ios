@@ -1,6 +1,8 @@
 // Created by Cal Stephens on 8/14/23.
 // Copyright © 2023 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 #if canImport(SwiftUI)
 import SwiftUI
 
@@ -119,4 +121,7 @@ public struct LottieButton: UIViewConfiguringSwiftUIView {
   private let action: () -> Void
   private var configuration = LottieConfiguration.shared
 }
+#endif
+
+
 #endif

@@ -1,6 +1,8 @@
 // Created by Cal Stephens on 1/24/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 import CoreFoundation
 
 // MARK: - Keyframe
@@ -96,3 +98,6 @@ extension Keyframe: Hashable where T: Hashable {
 // MARK: Sendable
 
 extension Keyframe: Sendable where T: Sendable { }
+
+
+#endif

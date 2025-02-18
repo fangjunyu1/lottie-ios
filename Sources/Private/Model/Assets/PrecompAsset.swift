@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/9/19.
 //
 
+#if canImport(QuartzCore)
+
 // MARK: - PrecompAsset
 
 final class PrecompAsset: Asset {
@@ -45,3 +47,5 @@ final class PrecompAsset: Asset {
 /// we need to restate that here to avoid a warning in Xcode 16
 // swiftlint:disable:next no_unchecked_sendable
 extension PrecompAsset: @unchecked Sendable { }
+
+#endif

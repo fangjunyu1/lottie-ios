@@ -1,6 +1,8 @@
 // Created by Cal Stephens on 8/14/23.
 // Copyright © 2023 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - Vector1DEffectValue
 
 final class Vector1DEffectValue: EffectValue {
@@ -43,3 +45,6 @@ final class Vector1DEffectValue: EffectValue {
 /// we need to restate that here to avoid a warning in Xcode 16
 // swiftlint:disable:next no_unchecked_sendable
 extension Vector1DEffectValue: @unchecked Sendable { }
+
+
+#endif

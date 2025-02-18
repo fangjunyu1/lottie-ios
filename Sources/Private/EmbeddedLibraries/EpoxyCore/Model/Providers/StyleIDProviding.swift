@@ -1,6 +1,8 @@
 // Created by eric_horacek on 12/1/20.
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - StyleIDProviding
 
 protocol StyleIDProviding {
@@ -35,3 +37,6 @@ extension EpoxyModeled where Self: StyleIDProviding {
       updateStrategy: .replace)
   }
 }
+
+
+#endif

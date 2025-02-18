@@ -1,6 +1,8 @@
 // Created by eric_horacek on 12/2/20.
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - ErasedContentProviding
 
 /// The capability of providing an type-erased `Equatable` content instance.
@@ -47,3 +49,6 @@ extension EpoxyModeled where Self: ErasedContentProviding {
     .init(keyPath: \Self.isErasedContentEqual, defaultValue: nil, updateStrategy: .replace)
   }
 }
+
+
+#endif

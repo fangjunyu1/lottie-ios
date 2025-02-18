@@ -5,6 +5,7 @@
 //  Created by Brandon Withrow on 2/19/19.
 //
 
+#if canImport(QuartzCore)
 import QuartzCore
 
 // MARK: - TextAnimatorNodeProperties
@@ -344,3 +345,6 @@ class TextAnimatorNode: AnimatorNode {
     textOutputNode.selectedRangeOpacity = (textAnimatorProperties.opacity?.value.cgFloatValue).flatMap { $0 * 0.01 }
   }
 }
+
+
+#endif

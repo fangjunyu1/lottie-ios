@@ -5,6 +5,9 @@
 //  Created by Brandon Withrow on 1/8/19.
 //
 
+
+#if canImport(QuartzCore)
+
 // MARK: - PreCompLayerModel
 
 /// A layer that holds another animation composition.
@@ -72,3 +75,6 @@ final class PreCompLayerModel: LayerModel {
 /// we need to restate that here to avoid a warning in Xcode 16
 // swiftlint:disable:next no_unchecked_sendable
 extension PreCompLayerModel: @unchecked Sendable { }
+
+
+#endif

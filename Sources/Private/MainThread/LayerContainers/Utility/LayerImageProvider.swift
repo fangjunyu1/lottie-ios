@@ -6,6 +6,9 @@
 //
 
 /// Connects a LottieImageProvider to a group of image layers
+
+#if canImport(QuartzCore)
+
 final class LayerImageProvider {
 
   // MARK: Lifecycle
@@ -50,3 +53,6 @@ final class LayerImageProvider {
     }
   }
 }
+
+
+#endif

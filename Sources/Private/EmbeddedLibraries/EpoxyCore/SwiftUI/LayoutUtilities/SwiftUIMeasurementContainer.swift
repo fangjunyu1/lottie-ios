@@ -1,6 +1,8 @@
 // Created by Bryn Bodayle on 1/24/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 #if canImport(SwiftUI)
 import SwiftUI
 
@@ -457,4 +459,7 @@ extension CGSize {
       height: height == ViewType.noIntrinsicMetric ? fallback.height : height)
   }
 }
+#endif
+
+
 #endif

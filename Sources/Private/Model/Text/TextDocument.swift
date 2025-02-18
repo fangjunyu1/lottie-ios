@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/9/19.
 //
 
+#if canImport(QuartzCore)
+
 // MARK: - TextJustification
 
 enum TextJustification: Int, Codable {
@@ -119,3 +121,5 @@ final class TextDocument: Codable, DictionaryInitializable, AnyInitializable {
     case textFrameSize = "sz"
   }
 }
+
+#endif

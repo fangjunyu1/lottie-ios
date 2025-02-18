@@ -1,6 +1,8 @@
 // Created by eric_horacek on 12/1/20.
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - DataIDProviding
 
 /// The capability of providing a stable data identifier with an erased type.
@@ -55,3 +57,6 @@ enum DefaultDataID: Hashable, CustomDebugStringConvertible {
     "DefaultDataID.noneProvided"
   }
 }
+
+
+#endif

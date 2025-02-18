@@ -21,6 +21,8 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+#if canImport(QuartzCore)
+
 import CoreGraphics
 import Foundation
 
@@ -113,3 +115,6 @@ struct UnitBezier {
     return t2
   }
 }
+
+
+#endif

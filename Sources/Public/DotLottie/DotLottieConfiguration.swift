@@ -5,6 +5,8 @@
 // Created by Evandro Hoffmann on 19/10/22.
 //
 
+#if canImport(QuartzCore)
+
 // MARK: - DotLottieConfiguration
 
 /// The `DotLottieConfiguration` model holds the presets extracted from DotLottieAnimation
@@ -70,3 +72,6 @@ public struct DotLottieConfigurationComponents: OptionSet {
   public let rawValue: Int
 
 }
+
+
+#endif

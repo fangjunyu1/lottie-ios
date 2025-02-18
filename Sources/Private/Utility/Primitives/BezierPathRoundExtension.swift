@@ -5,6 +5,8 @@
 //  Created by Duolingo on 11/1/22.
 //
 
+#if canImport(QuartzCore)
+
 import CoreGraphics
 import Foundation
 
@@ -156,3 +158,6 @@ extension BezierPath {
     return newPath
   }
 }
+
+
+#endif

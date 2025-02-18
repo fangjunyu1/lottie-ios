@@ -1,6 +1,8 @@
 // Created by miguel_jimenez on 8/2/23.
 // Copyright © 2023 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - AnyEquatable
 
 struct AnyEquatable {
@@ -20,3 +22,6 @@ extension AnyEquatable: Equatable {
     lhs.equals(rhs.value)
   }
 }
+
+
+#endif

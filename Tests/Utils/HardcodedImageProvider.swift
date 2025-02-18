@@ -2,7 +2,9 @@
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
 import Lottie
+#if canImport(QuartzCore)
 import QuartzCore
+#endif
 #if os(iOS)
 import UIKit
 #endif
@@ -10,6 +12,8 @@ import UIKit
 // MARK: - HardcodedImageProvider
 
 /// An `AnimationImageProvider` that always returns a specific hardcoded image of a dog (hi Marley)
+
+#if canImport(QuartzCore)
 struct HardcodedImageProvider: AnimationImageProvider {
   let imageName: String
 
@@ -25,3 +29,4 @@ struct HardcodedImageProvider: AnimationImageProvider {
     .resizeAspectFill
   }
 }
+#endif

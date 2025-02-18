@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/9/19.
 //
 
+#if canImport(QuartzCore)
+
 // MARK: - TextRangeUnit
 
 enum TextRangeUnit: Int, RawRepresentable, Codable {
@@ -238,3 +240,6 @@ final class TextAnimator: Codable, DictionaryInitializable {
     case opacity = "o"
   }
 }
+
+
+#endif

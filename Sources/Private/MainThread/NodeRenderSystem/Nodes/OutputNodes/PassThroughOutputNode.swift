@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/30/19.
 //
 
+#if canImport(QuartzCore)
+
 import CoreGraphics
 
 class PassThroughOutputNode: NodeOutput {
@@ -44,3 +46,6 @@ class PassThroughOutputNode: NodeOutput {
     return hasUpdate
   }
 }
+
+
+#endif

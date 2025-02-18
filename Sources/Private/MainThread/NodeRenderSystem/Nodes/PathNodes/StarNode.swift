@@ -6,6 +6,7 @@
 //
 
 import Foundation
+#if canImport(QuartzCore)
 import QuartzCore
 
 // MARK: - StarNodeProperties
@@ -220,3 +221,6 @@ extension BezierPath {
     return path
   }
 }
+
+
+#endif

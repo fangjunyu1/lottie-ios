@@ -1,6 +1,8 @@
 // Created by Cal Stephens on 8/3/23.
 // Copyright © 2023 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 import Foundation
 
 // MARK: - LottiePlaybackMode
@@ -258,3 +260,6 @@ extension LottiePlaybackMode.PlaybackMode {
     }
   }
 }
+
+
+#endif

@@ -1,6 +1,8 @@
 // Created by eric_horacek on 11/18/20.
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - EpoxyModelStorage
 
 /// The underlying storage for an `EpoxyModeled` model that is capable of storing any
@@ -86,3 +88,6 @@ private struct PropertyStorage {
   /// The property's corresponding `EpoxyModelProperty`, erased to an `AnyEpoxyModelProperty`.
   var property: AnyEpoxyModelProperty
 }
+
+
+#endif

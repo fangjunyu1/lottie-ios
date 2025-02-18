@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/21/19.
 //
 
+#if canImport(QuartzCore)
+
 import CoreGraphics
 import Foundation
 
@@ -223,3 +225,6 @@ extension BezierPath {
     return bezierPath
   }
 }
+
+
+#endif

@@ -5,6 +5,8 @@
 //  Created by René Fouquet on 03.05.21.
 //
 
+#if canImport(QuartzCore)
+
 #if canImport(UIKit)
 import UIKit
 #elseif canImport(AppKit)
@@ -31,3 +33,6 @@ extension Data {
     #endif
   }
 }
+
+
+#endif

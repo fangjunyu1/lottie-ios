@@ -5,6 +5,8 @@
 //  Created by Tyler Hedrick on 3/6/19.
 //
 
+#if canImport(QuartzCore)
+
 import Foundation
 #if canImport(UIKit)
 
@@ -30,4 +32,6 @@ public final class CompatibleAnimationKeypath: NSObject {
 
   public let animationKeypath: AnimationKeypath
 }
+#endif
+
 #endif

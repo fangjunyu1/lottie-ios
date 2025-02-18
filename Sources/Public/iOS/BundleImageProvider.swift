@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/25/19.
 //
 
+#if canImport(QuartzCore)
+
 #if canImport(UIKit)
 import UIKit
 
@@ -95,4 +97,7 @@ extension BundleImageProvider: Equatable {
       && lhs.searchPath == rhs.searchPath
   }
 }
+#endif
+
+
 #endif

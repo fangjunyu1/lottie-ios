@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/8/19.
 //
 
+#if canImport(QuartzCore)
+
 // MARK: - ImageLayerModel
 
 /// A layer that holds an image.
@@ -47,3 +49,6 @@ final class ImageLayerModel: LayerModel {
 /// we need to restate that here to avoid a warning in Xcode 16
 // swiftlint:disable:next no_unchecked_sendable
 extension ImageLayerModel: @unchecked Sendable { }
+
+
+#endif
