@@ -3,6 +3,9 @@
 
 // MARK: - Keyframes
 
+#if canImport(QuartzCore)
+import QuartzCore
+
 enum Keyframes {
 
   // MARK: Internal
@@ -326,3 +329,6 @@ extension KeyframeGroup {
     }
   }
 }
+
+
+#endif

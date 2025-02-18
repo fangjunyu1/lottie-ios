@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/9/19.
 //
 
+#if canImport(QuartzCore)
+
 import CoreGraphics
 import Foundation
 
@@ -138,3 +140,5 @@ extension ImageAsset {
 /// we need to restate that here to avoid a warning in Xcode 16
 // swiftlint:disable:next no_unchecked_sendable
 extension ImageAsset: @unchecked Sendable { }
+
+#endif

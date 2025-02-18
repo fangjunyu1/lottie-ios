@@ -1,6 +1,8 @@
 // Created by eric_horacek on 6/22/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 #if canImport(SwiftUI)
 import SwiftUI
 
@@ -123,4 +125,6 @@ extension MeasuringViewRepresentable {
   #endif
 }
 #endif
+#endif
+
 #endif

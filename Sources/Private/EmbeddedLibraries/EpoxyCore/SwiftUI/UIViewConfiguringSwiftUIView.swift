@@ -1,6 +1,8 @@
 // Created by eric_horacek on 3/4/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 #if canImport(SwiftUI)
 import SwiftUI
 
@@ -40,4 +42,7 @@ extension UIViewConfiguringSwiftUIView {
     return copy
   }
 }
+#endif
+
+
 #endif

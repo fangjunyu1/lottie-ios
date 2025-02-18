@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 2/4/19.
 //
 
+#if canImport(QuartzCore)
+
 #if canImport(UIKit)
 import UIKit
 #elseif canImport(AppKit)
@@ -268,4 +270,7 @@ class HapticGenerator: ImpactGenerator {
 class NullHapticGenerator: ImpactGenerator {
   func generateImpact() { }
 }
+#endif
+
+
 #endif

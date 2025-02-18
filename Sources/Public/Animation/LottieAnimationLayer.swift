@@ -3,7 +3,9 @@
 //  Lottie
 //
 
+#if canImport(QuartzCore)
 import QuartzCore
+
 
 // MARK: - LottieAnimationLayer
 
@@ -1530,3 +1532,6 @@ extension LottieLoopMode {
     }
   }
 }
+
+
+#endif

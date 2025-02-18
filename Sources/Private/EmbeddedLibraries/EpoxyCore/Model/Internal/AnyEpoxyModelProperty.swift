@@ -1,6 +1,8 @@
 // Created by eric_horacek on 12/1/20.
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - AnyEpoxyModelProperty
 
 /// An erased `EpoxyModelProperty`, with the ability to call the `UpdateStrategy` even when the type
@@ -27,3 +29,5 @@ extension EpoxyModelProperty: AnyEpoxyModelProperty {
     return updateStrategy.update(typedOld, typedNew)
   }
 }
+
+#endif

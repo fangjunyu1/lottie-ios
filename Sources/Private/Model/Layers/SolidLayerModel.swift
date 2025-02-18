@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/8/19.
 //
 
+#if canImport(QuartzCore)
+
 // MARK: - SolidLayerModel
 
 /// A layer that holds a solid color.
@@ -61,3 +63,6 @@ final class SolidLayerModel: LayerModel {
 /// we need to restate that here to avoid a warning in Xcode 16
 // swiftlint:disable:next no_unchecked_sendable
 extension SolidLayerModel: @unchecked Sendable { }
+
+
+#endif

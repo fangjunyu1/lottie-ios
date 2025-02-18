@@ -5,6 +5,8 @@
 //  Created by Marcelo Fabri on 10/18/22.
 //
 
+#if canImport(QuartzCore)
+
 import Foundation
 
 // MARK: - DefaultAnimationCache
@@ -65,3 +67,6 @@ public class DefaultAnimationCache: AnimationCacheProvider {
 // making breaking changes.
 // swiftlint:disable:next no_unchecked_sendable
 extension DefaultAnimationCache: @unchecked Sendable { }
+
+
+#endif

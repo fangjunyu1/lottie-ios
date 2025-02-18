@@ -1,6 +1,8 @@
 // Created by Cal Stephens on 8/15/23.
 // Copyright © 2023 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - EffectValueType
 
 /// https://lottiefiles.github.io/lottie-docs/schema/#/$defs/effect-values
@@ -95,3 +97,6 @@ extension [EffectValue] {
 /// All `EffectValue` subclasses are immutable `Sendable` values.
 // swiftlint:disable:next no_unchecked_sendable
 extension EffectValue: @unchecked Sendable { }
+
+
+#endif

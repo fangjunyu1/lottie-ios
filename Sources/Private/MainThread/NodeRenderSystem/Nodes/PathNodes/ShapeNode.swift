@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/16/19.
 //
 
+#if canImport(QuartzCore)
+
 import CoreGraphics
 import Foundation
 
@@ -72,3 +74,6 @@ final class ShapeNode: AnimatorNode, PathNode {
   }
 
 }
+
+
+#endif

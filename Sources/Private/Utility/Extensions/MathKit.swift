@@ -6,6 +6,8 @@
 //
 // From https://github.com/buba447/UIToolBox
 
+#if canImport(QuartzCore)
+
 import CoreGraphics
 import Foundation
 
@@ -440,3 +442,6 @@ extension CGPoint {
       y: y + point.y)
   }
 }
+
+
+#endif

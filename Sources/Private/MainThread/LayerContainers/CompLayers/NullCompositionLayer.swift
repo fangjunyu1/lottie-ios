@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/25/19.
 //
 
+#if canImport(QuartzCore)
+
 import Foundation
 
 final class NullCompositionLayer: CompositionLayer {
@@ -26,3 +28,6 @@ final class NullCompositionLayer: CompositionLayer {
   }
 
 }
+
+
+#endif

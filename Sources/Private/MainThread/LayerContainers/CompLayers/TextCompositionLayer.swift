@@ -6,6 +6,9 @@
 //
 
 /// Needed for NSMutableParagraphStyle...
+
+#if canImport(QuartzCore)
+
 #if os(OSX)
 import AppKit
 #else
@@ -178,3 +181,6 @@ final class TextCompositionLayer: CompositionLayer {
     textLayer.contentsScale = renderScale
   }
 }
+
+
+#endif

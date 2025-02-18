@@ -31,6 +31,8 @@
 //  SOFTWARE.
 //
 
+#if canImport(QuartzCore)
+
 import Foundation
 
 #if canImport(UIKit)
@@ -254,3 +256,6 @@ extension LRUCache {
     }
   }
 }
+
+
+#endif

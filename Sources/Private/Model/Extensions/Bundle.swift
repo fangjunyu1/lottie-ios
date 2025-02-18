@@ -1,3 +1,5 @@
+#if canImport(QuartzCore)
+
 import Foundation
 #if canImport(UIKit)
 import UIKit
@@ -49,3 +51,6 @@ extension String {
     return (self as NSString).deletingPathExtension
   }
 }
+
+
+#endif

@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/30/19.
 //
 
+#if canImport(QuartzCore)
+
 import Foundation
 import QuartzCore
 
@@ -41,3 +43,6 @@ final class SingleValueProvider<ValueType: AnyInterpolatable>: ValueProvider {
 
   private var hasUpdate = true
 }
+
+
+#endif

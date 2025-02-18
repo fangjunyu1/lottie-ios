@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/18/19.
 //
 
+#if canImport(QuartzCore)
+
 extension AnimatorNode {
 
   func printNodeTree() {
@@ -21,3 +23,6 @@ extension AnimatorNode {
   }
 
 }
+
+
+#endif

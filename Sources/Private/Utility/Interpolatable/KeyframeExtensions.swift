@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/14/19.
 //
 
+#if canImport(QuartzCore)
+
 import CoreGraphics
 import Foundation
 
@@ -44,3 +46,6 @@ extension Keyframe {
     return progress
   }
 }
+
+
+#endif

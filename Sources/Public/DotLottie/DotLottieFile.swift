@@ -5,6 +5,8 @@
 // Created by Evandro Harrison Hoffmann on 27/06/2020.
 //
 
+#if canImport(QuartzCore)
+
 import Foundation
 
 // MARK: - DotLottieFile
@@ -152,3 +154,6 @@ extension String {
 // to make it truly thread-safe.
 // swiftlint:disable:next no_unchecked_sendable
 extension DotLottieFile: @unchecked Sendable { }
+
+
+#endif

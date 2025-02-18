@@ -1,6 +1,8 @@
 // Created by Cal Stephens on 7/14/23.
 // Copyright © 2023 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - RenderingEngineOption
 
 public enum RenderingEngineOption: Hashable {
@@ -111,3 +113,6 @@ extension RenderingEngine: RawRepresentable, CustomStringConvertible {
     rawValue
   }
 }
+
+
+#endif

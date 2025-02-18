@@ -5,6 +5,8 @@
 //  Created by Tyler Hedrick on 3/6/19.
 //
 
+#if canImport(QuartzCore)
+
 import Foundation
 #if canImport(UIKit)
 import UIKit
@@ -540,4 +542,6 @@ public final class CompatibleDictionaryTextProvider: NSObject {
 
   private let values: [String: String]
 }
+#endif
+
 #endif

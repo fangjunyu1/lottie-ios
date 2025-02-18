@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 2/6/19.
 //
 
+#if canImport(QuartzCore)
+
 #if canImport(UIKit)
 import UIKit
 
@@ -80,4 +82,7 @@ open class LottieAnimationViewBase: UIView {
     // Implemented by subclasses.
   }
 }
+#endif
+
+
 #endif

@@ -1,6 +1,7 @@
 // Created by Cal Stephens on 1/28/22.
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
 import QuartzCore
 
 extension CAShapeLayer {
@@ -89,3 +90,6 @@ extension CombinedShapeItem {
 /// we need to restate that here to avoid a warning in Xcode 16
 // swiftlint:disable:next no_unchecked_sendable
 extension CombinedShapeItem: @unchecked Sendable { }
+
+
+#endif

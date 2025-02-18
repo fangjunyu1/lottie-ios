@@ -5,6 +5,8 @@
 //  Created by Enrique Bermúdez on 10/27/19.
 //
 
+#if canImport(QuartzCore)
+
 import CoreGraphics
 import Foundation
 
@@ -138,3 +140,6 @@ extension GradientValueProvider: Equatable {
     lhs.identity == rhs.identity
   }
 }
+
+
+#endif

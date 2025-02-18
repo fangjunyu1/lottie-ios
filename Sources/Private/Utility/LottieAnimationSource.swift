@@ -1,6 +1,8 @@
 // Created by Cal Stephens on 7/26/23.
 // Copyright © 2023 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - LottieAnimationSource
 
 /// A data source for a Lottie animation.
@@ -49,3 +51,6 @@ extension DotLottieFile {
     .dotLottieFile(self)
   }
 }
+
+
+#endif

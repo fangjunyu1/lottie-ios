@@ -1,6 +1,8 @@
 // Created by eric_horacek on 11/18/20.
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - EpoxyModelProperty
 
 /// A property that can be stored in any concrete `EpoxyModeled` type.
@@ -156,3 +158,6 @@ extension EpoxyModelProperty.UpdateStrategy {
 
   // Add more arities as needed
 }
+
+
+#endif

@@ -1,6 +1,8 @@
 // Created by eric_horacek on 3/15/21.
 // Copyright © 2021 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 /// A generic result builder that enables a DSL for building arrays of Epoxy models.
 @resultBuilder
 enum EpoxyModelArrayBuilder<Model> {
@@ -46,3 +48,6 @@ enum EpoxyModelArrayBuilder<Model> {
     components.flatMap { $0 }
   }
 }
+
+
+#endif

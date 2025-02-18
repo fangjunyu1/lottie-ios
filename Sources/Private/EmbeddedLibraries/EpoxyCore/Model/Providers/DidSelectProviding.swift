@@ -1,6 +1,8 @@
 // Created by eric_horacek on 12/2/20.
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - DidSelectProviding
 
 /// A sentinel protocol for enabling an `CallbackContextEpoxyModeled` to provide a `didSelect`
@@ -34,3 +36,6 @@ extension CallbackContextEpoxyModeled where Self: DidSelectProviding {
     .init(keyPath: \Self.didSelect, defaultValue: nil, updateStrategy: .chain())
   }
 }
+
+
+#endif

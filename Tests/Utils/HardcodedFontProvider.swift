@@ -2,7 +2,11 @@
 // Copyright © 2022 Airbnb Inc. All rights reserved.
 
 import Lottie
+
+#if canImport(QuartzCore)
 import QuartzCore
+#endif
+
 #if os(iOS)
 import UIKit
 #endif
@@ -10,6 +14,8 @@ import UIKit
 // MARK: - HardcodedFontProvider
 
 /// An `AnimationFontProvider` that always returns a specific hardcoded font
+#if canImport(QuartzCore)
+
 struct HardcodedFontProvider: AnimationFontProvider {
   let font: CTFont
 
@@ -17,3 +23,5 @@ struct HardcodedFontProvider: AnimationFontProvider {
     font
   }
 }
+
+#endif

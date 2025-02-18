@@ -5,6 +5,7 @@
 //  Created by Brandon Withrow on 1/25/19.
 //
 
+#if canImport(QuartzCore)
 import QuartzCore
 
 final class PreCompositionLayer: CompositionLayer {
@@ -134,3 +135,6 @@ final class PreCompositionLayer: CompositionLayer {
 
   fileprivate var animationLayers: [CompositionLayer]
 }
+
+
+#endif

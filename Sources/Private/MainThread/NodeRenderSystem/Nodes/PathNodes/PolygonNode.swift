@@ -6,6 +6,7 @@
 //
 
 import Foundation
+#if canImport(QuartzCore)
 import QuartzCore
 
 // MARK: - PolygonNodeProperties
@@ -168,3 +169,6 @@ extension BezierPath {
     return path
   }
 }
+
+
+#endif

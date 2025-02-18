@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/8/19.
 //
 
+#if canImport(QuartzCore)
+
 import CoreGraphics
 
 // MARK: - BezierPath
@@ -498,3 +500,6 @@ extension BezierPath {
   }
 
 }
+
+
+#endif

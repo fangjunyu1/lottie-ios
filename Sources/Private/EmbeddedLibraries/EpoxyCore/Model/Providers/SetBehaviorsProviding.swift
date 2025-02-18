@@ -1,6 +1,8 @@
 // Created by eric_horacek on 12/2/20.
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - SetBehaviorsProviding
 
 /// A sentinel protocol for enabling an `CallbackContextEpoxyModeled` to provide a `setBehaviors`
@@ -36,3 +38,6 @@ extension CallbackContextEpoxyModeled where Self: SetBehaviorsProviding {
     .init(keyPath: \Self.setBehaviors, defaultValue: nil, updateStrategy: .chain())
   }
 }
+
+
+#endif

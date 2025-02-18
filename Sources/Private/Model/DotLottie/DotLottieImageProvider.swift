@@ -5,6 +5,8 @@
 //  Created by Evandro Hoffmann on 20/10/22.
 //
 
+#if canImport(QuartzCore)
+
 #if canImport(UIKit)
 import UIKit
 #elseif canImport(AppKit)
@@ -87,3 +89,6 @@ extension DotLottieImageProvider: Hashable {
   }
 
 }
+
+
+#endif

@@ -3,6 +3,8 @@
 
 // MARK: - LayerContext
 
+#if canImport(QuartzCore)
+
 /// Context available when constructing an `AnimationLayer`
 struct LayerContext {
   let animation: LottieAnimation
@@ -57,3 +59,6 @@ extension LayerModel {
   }
 
 }
+
+
+#endif

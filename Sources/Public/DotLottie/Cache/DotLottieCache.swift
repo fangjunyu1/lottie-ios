@@ -5,6 +5,8 @@
 //  Created by Evandro Hoffmann on 20/10/22.
 //
 
+#if canImport(QuartzCore)
+
 import Foundation
 
 // MARK: - DotLottieCache
@@ -64,3 +66,6 @@ public class DotLottieCache: DotLottieCacheProvider {
 // redesign DotLottieCache to be properly Sendable without making breaking changes.
 // swiftlint:disable:next no_unchecked_sendable
 extension DotLottieCache: @unchecked Sendable { }
+
+
+#endif

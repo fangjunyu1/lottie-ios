@@ -1,6 +1,8 @@
 // Created by eric_horacek on 11/18/20.
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - EpoxyModeled
 
 /// A protocol that all concrete Epoxy declarative UI model types conform to.
@@ -52,3 +54,6 @@ extension EpoxyModeled {
     return copy
   }
 }
+
+
+#endif

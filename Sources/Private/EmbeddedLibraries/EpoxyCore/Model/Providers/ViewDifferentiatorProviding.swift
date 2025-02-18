@@ -1,6 +1,8 @@
 // Created by Bryan Keller on 12/17/20.
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 // MARK: - ViewDifferentiatorProviding
 
 /// The capability of providing a view differentiator that facilitates generating collection view
@@ -32,3 +34,6 @@ struct ViewDifferentiator: Hashable {
   var styleID: AnyHashable?
 
 }
+
+
+#endif

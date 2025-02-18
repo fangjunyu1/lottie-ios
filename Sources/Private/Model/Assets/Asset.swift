@@ -5,6 +5,8 @@
 //  Created by Brandon Withrow on 1/9/19.
 //
 
+#if canImport(QuartzCore)
+
 // MARK: - Asset
 
 public class Asset: Codable, DictionaryInitializable {
@@ -48,3 +50,5 @@ public class Asset: Codable, DictionaryInitializable {
 /// All `Asset` subclasses are immutable `Sendable` values.
 // swiftlint:disable:next no_unchecked_sendable
 extension Asset: @unchecked Sendable { }
+
+#endif

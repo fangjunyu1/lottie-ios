@@ -1,6 +1,8 @@
 // Created by Cal Stephens on 7/14/23.
 // Copyright © 2023 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
+
 /// How animation files should be decoded
 public enum DecodingStrategy: Hashable {
   /// Use Codable. This is was the default strategy introduced on Lottie 3, but should be rarely
@@ -13,3 +15,6 @@ public enum DecodingStrategy: Hashable {
   /// it's the default as of Lottie 4.x.
   case dictionaryBased
 }
+
+
+#endif

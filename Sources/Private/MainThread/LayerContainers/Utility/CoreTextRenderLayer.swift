@@ -8,13 +8,18 @@
 import CoreGraphics
 import CoreText
 import Foundation
+#if canImport(QuartzCore)
 import QuartzCore
+#endif
 /// Needed for NSMutableParagraphStyle...
 #if os(OSX)
 import AppKit
 #else
 import UIKit
 #endif
+
+
+#if canImport(QuartzCore)
 
 // MARK: - CoreTextRenderLayer
 
@@ -394,3 +399,6 @@ extension CGContext {
     }
   }
 }
+
+
+#endif

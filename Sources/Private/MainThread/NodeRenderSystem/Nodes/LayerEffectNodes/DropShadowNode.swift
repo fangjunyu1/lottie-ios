@@ -1,6 +1,7 @@
 // Created by Lan Xu on 2024/6/7.
 // Copyright © 2024 Airbnb Inc. All rights reserved.
 
+#if canImport(QuartzCore)
 import QuartzCore
 
 // MARK: - DropShadowNode
@@ -100,3 +101,6 @@ final class DropShadowNodeProperties: NodePropertyMap {
   let angle: NodeProperty<LottieVector1D>?
   let distance: NodeProperty<LottieVector1D>?
 }
+
+
+#endif
